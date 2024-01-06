@@ -30,3 +30,22 @@ function show(colleges) {
     list.appendChild(li);
   }
 }
+
+let input = document.querySelector("input");
+
+btn.addEventListener("click", async () => {
+  await searchColleges();
+});
+
+input.addEventListener("keydown", async (event) => {
+  if (event.key === "Enter") {
+    await searchColleges();
+  }
+});
+
+async function searchColleges() {
+  let country = input.value;
+  let colleges = await getColleges(country);
+  show(colleges);
+  input.value = "";
+}

@@ -1,3 +1,4 @@
+/* General styling for the entire page */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -11,18 +12,21 @@ body {
   margin: 1rem 0;
 }
 
+/* Styling for the main container */
 .container-box {
   background-color: #f5ece3;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.3s ease; /* Transition effect on transform property */
+  transition: 0.3s ease;
 }
 
+/* Hover effect on the main container */
 .container-box:hover {
   box-shadow: 0 0 5px #000;
 }
 
+/* Styling for the inner content container */
 .container {
   max-width: 600px;
   margin: 20px;
@@ -30,18 +34,21 @@ body {
   text-align: center;
 }
 
+/* Heading styles */
 h2 {
   color: #2d3940;
   line-height: 1.5;
   letter-spacing: 1.5px;
 }
 
+/* Styling for the input container */
 .input-container {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
+/* Styling for input field */
 input {
   flex: 1;
   padding: 15px;
@@ -52,12 +59,14 @@ input {
   transition: 0.3s ease;
 }
 
+/* Hover effect on input field */
 input:hover {
   box-shadow: 0 0 1px #000;
   border-color: #527ba0;
   background-color: hsl(208, 17%, 81%, 0.2);
 }
 
+/* Styling for the search button */
 button {
   padding: 15px 30px;
   background-color: #e07a5f;
@@ -70,18 +79,21 @@ button {
   font-size: 1.1rem;
 }
 
+/* Hover effect on the search button */
 button:hover {
   background-color: #fff;
   box-shadow: 0 0 5px #e07a5f;
   color: #e07a5f;
 }
 
+/* Styling for the result list */
 .list {
   list-style: none;
   padding: 0;
   text-align: left;
 }
 
+/* Styling for each result item in the list */
 .list li {
   background-color: #f5ece3;
   padding: 15px;
@@ -92,6 +104,7 @@ button:hover {
   transition: 0.3s ease;
 }
 
+/* Hover effect on each result item in the list */
 .list li:hover {
   background-color: #c5ced6;
   box-shadow: 0 0 5px #e07a5f;
@@ -102,6 +115,7 @@ input::-webkit-calendar-picker-indicator {
   filter: invert(0);
 }
 
+/* Styling for the dropdown options */
 datalist option {
   background-color: #f5ece3;
   padding: 8px;
@@ -110,6 +124,7 @@ datalist option {
   margin: 2px;
 }
 
+/* Styling for the datalist */
 datalist {
   max-height: 150px;
   overflow-y: auto;
